@@ -119,7 +119,7 @@ void loop() {
   }
   else if (falar == 2) {
     fala (9999);
-    falar = 0;
+    falar = 3;
   }
   else if (falar == 3) {
     mostra_temp();
