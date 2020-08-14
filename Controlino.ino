@@ -46,7 +46,7 @@ void setup() {
   pinMode(2,INPUT_PULLUP);
   pinMode(3,INPUT_PULLUP);
 
-  byte portas[] = {4, 5, 32, 33, 34, 47, 49}; //portas utilizadas pelos periféricos do Controlino
+  byte portas[] = {4, 5, 32, 33, 34, 48, 49}; //portas utilizadas pelos periféricos do Controlino
 
   for (byte i = 0; i < 7; i++){
     pinMode(portas[i], OUTPUT); //configura as portas como saídas digitais
@@ -135,9 +135,9 @@ bool iniciaWifi() {
   if (espera ("OK")) console("            OK"); 
   else {
     console("RESET por fio");
-    digitalWrite(47, LOW);
+    digitalWrite(48, LOW);
     delay (250);
-    digitalWrite(47, HIGH);
+    digitalWrite(48, HIGH);
     delay (2000);
   }
   
